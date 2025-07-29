@@ -1,0 +1,48 @@
+.resorts {
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    @include mediaTablet {
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
+  }
+}
+
+.resorts__card {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  color: $white;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    z-index: 6;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover {
+    color: $white;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+.resorts__card-img {
+  position: relative;
+  z-index: 5;
+  transition: all 0.2s ease-in;
+}
+
+.resorts__card:hover .resorts__card-img {
+  transform: scale(1.1);
+  filter: contrast(110%) brightness(1.2) saturate(1.2);
+}

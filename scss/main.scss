@@ -1,0 +1,17 @@
+// Общие стили
+@import './base/reset';
+@import './base/vars';
+@import './base/mixins';
+@import './base/base';
+
+// Блоки
+@import './block/header';
+@import './block/nav';
+@import './block/info';
+@import './block/benefits';
+@import './block/resorts';
+@import './block/cta';
+@import './block/video';
+@import './block/questions';
+@import './block/footer';
+@import './block/nav-icon';

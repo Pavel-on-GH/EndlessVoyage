@@ -1,0 +1,51 @@
+.cta {
+  margin-top: 20px;
+  padding: 100px 0;
+  background: linear-gradient(
+      180deg,
+      #edeeed 11.98%,
+      rgba(210, 203, 195, 0.38) 51.04%,
+      #edeeed 92.19%
+    ),
+    url('../../img/cta/cta-bg.jpg');
+  background-repeat: no-repeat;
+
+  @include mediaTablet {
+    padding: 20px;
+  }
+}
+
+.cta__title {
+  margin-bottom: 37px;
+}
+
+.cta__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+  @include mediaTablet {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cta__text {
+  text-align: justify;
+
+  @include mediaTablet {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+.cta__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 35px;
+  column-gap: 30px;
+  align-items: center;
+
+  @include mediaTablet {
+    grid-template-columns: 1fr;
+  }
+}

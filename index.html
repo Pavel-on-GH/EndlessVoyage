@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EndlessVoyage</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="img/favicon.svg" />
+    <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-row">
+            <a href="#">
+              <img loading="lazy" src="./img/favicon.svg" width="100" alt="icon" />
+            </a>
+            <div class="header__nav">
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li><a href="#">Страны</a></li>
+                  <li><a href="#">Отели</a></li>
+                  <li><a href="#">Туры</a></li>
+                  <li><a href="#">Акции</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__nav-btn">
+              <button class="nav-icon-btn" aria-label="Открыть меню навигации">
+                <div class="nav-icon"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h1 class="header__title">
+          Незабываемый отдых <br />
+          на лучших курортах мира!
+        </h1>
+      </div>
+
+      <div class="header__bottom container">
+        <div class="info__connection">
+          <a href="#" class="info info--map">г.Москва, ул.Туристическая, д.1</a>
+          <a href="tel:+79998887766" class="info info--tel">+7-(999)-888-77-66</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="benefits">
+        <h2 class="benefits__title section-title">Вместе с нами испытай</h2>
+        <div class="container">
+          <div class="benefits__row">
+            <div class="benefits__item">
+              <img
+                loading="lazy"
+                src="./img/benefits/surfing.png"
+                alt="surfing"
+                class="benefits__item-img" />
+              <p class="benefits__item-text">Сёрфинг и дайвинг</p>
+            </div>
+            <div class="benefits__item">
+              <img
+                loading="lazy"
+                src="./img/benefits/mountains.png"
+                alt="mountains"
+                class="benefits__item-img" />
+              <p class="benefits__item-text">Горнолыжные курорты</p>
+            </div>
+            <div class="benefits__item">
+              <img
+                loading="lazy"
+                src="./img/benefits/fountain.png"
+                alt="fountain"
+                class="benefits__item-img" />
+              <p class="benefits__item-text">Экскурсии по историческим достопримечательностям</p>
+            </div>
+            <div class="benefits__item">
+              <img
+                loading="lazy"
+                src="./img/benefits/rowing.png"
+                alt="rowing"
+                class="benefits__item-img" />
+              <p class="benefits__item-text">
+                Активный отдых в нетронутых человеком уголках планеты
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="resorts">
+        <div class="container">
+          <div class="section-title">
+            <h2>Наши предложения</h2>
+          </div>
+          <div class="resorts__cards">
+            <a href="#" class="resorts__card">
+              <img
+                loading="lazy"
+                class="resorts__card-img"
+                src="./img/resorts/resort-01.jpg"
+                alt="resorts-1" />
+            </a>
+            <a href="#" class="resorts__card">
+              <img
+                loading="lazy"
+                class="resorts__card-img"
+                src="./img/resorts/resort-02.jpg"
+                alt="resorts-2" />
+            </a>
+            <a href="#" class="resorts__card">
+              <img
+                loading="lazy"
+                class="resorts__card-img"
+                src="./img/resorts/resort-03.jpg"
+                alt="resorts-3" />
+            </a>
+            <a href="#" class="resorts__card">
+              <img
+                loading="lazy"
+                class="resorts__card-img"
+                src="./img/resorts/resort-04.jpg"
+                alt="resorts-4" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="cta">
+        <div class="container">
+          <div class="section-title cta__title">
+            <h2>Хотите оформить бронь?</h2>
+          </div>
+          <div class="cta__content">
+            <div class="cta__text">
+              "EndlessVoyage" – туроператор, турагентство и авиакомпания в одном лице. Мы знаем всё
+              об отдыхе, организуем его сами и предлагаем самые выгодные туры от проверенных
+              компаний в России и за рубежом.
+            </div>
+            <form class="cta__form">
+              <input class="input" type="text" placeholder="Ваше имя" />
+              <input class="input" type="tel" placeholder="Ваш телефон" />
+              <p class="disclaimer-of-liability disclaimer-of-liability--bottom">
+                *Мы никому не передаем ваши данные. <br />
+                И не сохраняем ваш номер в базу.
+              </p>
+              <button class="button">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="video">
+        <div class="container">
+          <div class="section-title video__title">
+            <h2>Лучшие пляжи мира - только для вас</h2>
+          </div>
+          <a
+            href="https://www.youtube.com/watch?v=0ZBqnOeIxbQ"
+            aria-label="Открыть видео о пляжах"
+            data-youtubeLightbox
+            class="video__link">
+            <img loading="lazy" src="./img/video/video.jpg" alt="video" class="video__img" />
+            <img
+              loading="lazy"
+              src="/img/video/video-icon.svg"
+              alt="video-icon"
+              class="video__icon" />
+          </a>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="container">
+          <h2 class="questions__title section-title">
+            Остались вопросы? <br />
+            Уточните детали по телефону
+          </h2>
+          <div class="questions__form">
+            <p class="disclaimer-of-liability">
+              *Мы никому не передаем ваши данные. <br />
+              И не сохраняем ваш номер в базу.
+            </p>
+            <input class="input" type="text" placeholder="Ваше имя" />
+            <input class="input" type="tel" placeholder="Ваш телефон" />
+            <button class="button">Отправить</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__form">
+          <img loading="lazy" src="./img/favicon.svg" alt="logo" />
+          <ul class="footer__col1">
+            <li class="footer__text"><a href="#">Страны</a></li>
+            <li class="footer__text"><a href="#">Отели</a></li>
+            <li class="footer__text"><a href="#">Туры</a></li>
+            <li class="footer__text"><a href="#">Акции</a></li>
+            <li class="footer__text"><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="footer__col2">
+            <li class="footer__text"><a href="#">Бронирование</a></li>
+            <li class="footer__text"><a href="#">Сервисные услуги</a></li>
+            <li class="footer__text"><a href="#">Направления</a></li>
+            <li class="footer__text"><a href="#">Частые вопросы</a></li>
+            <li class="footer__text"><a href="#">Программа лояльности</a></li>
+          </ul>
+          <ul class="footer__col3">
+            <li class="footer__text"><a href="#">Адрес: г.Москва, ул.Туристическая, д.1</a></li>
+            <li class="footer__text"><a href="tel:+79998887766">Телефон: +7-(999)-888-77-66</a></li>
+            <li class="footer__text"><a href="#">Время работы: 10:00 - 20:00</a></li>
+            <li class="footer__text">
+              <a href="mailto:Turism-Landing@yandex.ru">E-mail: Turism-Landing@yandex.ru</a>
+            </li>
+            <div class="footer__social">
+              <a href="#"><img loading="lazy" src="./img/social/youtube.svg" alt="youtube" /></a>
+              <a href="#"><img loading="lazy" src="./img/social/vk.svg" alt="vk" /></a>
+              <a href="#"><img loading="lazy" src="./img/social/facebook.svg" alt="facebook" /></a>
+              <a href="#"
+                ><img loading="lazy" src="./img/social/instagram.svg" alt="instagram"
+              /></a>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div id="youtubelightbox" class="youtubelightbox">
+      <div class="youtubelightbox__centeredchild">
+        <div class="youtubelightbox__videowrapper">
+          <div id="youtubelightboxPlayer"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+    <script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@100;300;400&display=swap');
+
+body {
+  font-family: $font-main;
+  background-color: $marble;
+  color: $dark;
+  font-size: 16px;
+}
+
+a {
+  color: $dark;
+  &:hover {
+    color: $ref;
+    transition: color 0.2s ease-in;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1140px;
+
+  &--sm {
+    max-width: 840px;
+  }
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: $font-accent;
+  color: $accent;
+  font-weight: 700;
+  font-size: 36px;
+
+  @include mediaTablet {
+    margin-top: 40px;
+    font-size: 24px;
+  }
+}
+
+.disclaimer-of-liability {
+  font-size: 13px;
+  line-height: 1.25;
+  text-align: center;
+  color: $dark;
+
+  &--bottom {
+    @include mediaTablet {
+      grid-row: 4 / 5;
+    }
+  }
+}
+
+.input {
+  height: 50px;
+  background-color: rgba($white, 0.5);
+  color: $dark;
+  font-size: 18px;
+  line-height: 1.215;
+  text-align: center;
+  padding: 10px;
+
+  @include mediaTablet {
+  }
+
+  &:focus {
+    background-color: rgba($white, 0.7);
+  }
+
+  &::placeholder {
+    color: rgba($dark, 0.8);
+  }
+
+  &:focus::placeholder {
+    opacity: 0;
+  }
+}
+
+.button {
+  background-color: $accent;
+  width: 255px;
+  height: 50px;
+  border-radius: 8px;
+
+  @include mediaTablet {
+    width: auto;
+  }
+}
+
+.not-scroll {
+  overflow-y: hidden;
+}

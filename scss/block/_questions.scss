@@ -1,0 +1,21 @@
+.questions__title {
+  margin-top: 60px;
+  padding-bottom: 38px;
+
+  @include mediaTablet {
+    margin-top: 40px;
+    padding-bottom: 0px;
+  }
+}
+.questions__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding-bottom: 100px;
+  align-items: center;
+
+  @include mediaTablet {
+    grid-template-columns: 1fr;
+    padding-bottom: 40px;
+  }
+}
