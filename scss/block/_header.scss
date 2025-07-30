@@ -26,10 +26,22 @@
   }
 }
 
+.header__logo {
+  transition: transform 0.5s;
+}
+
+.header__logo:hover {
+  transform: scale(1.2);
+}
+
 .header__top-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav__list {
+  font-size: 20px;
 }
 
 .header__top-row--mobile {
@@ -76,11 +88,13 @@
 }
 
 .header__title {
+  position: relative;
   font-family: $font-accent;
   font-weight: 700;
   font-size: 48px;
   text-align: center;
   color: $accent;
+  z-index: 3;
 
   @include mediaTablet {
     font-size: 32px;

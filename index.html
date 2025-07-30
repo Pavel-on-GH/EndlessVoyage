@@ -14,16 +14,21 @@
         <div class="container">
           <div class="header__top-row">
             <a href="#">
-              <img loading="lazy" src="./img/favicon.svg" width="100" alt="icon" />
+              <img
+                class="header__logo logo"
+                loading="lazy"
+                src="./img/favicon.svg"
+                width="100"
+                alt="icon" />
             </a>
             <div class="header__nav">
               <nav class="nav">
                 <ul class="nav__list">
-                  <li><a href="#">Страны</a></li>
-                  <li><a href="#">Отели</a></li>
-                  <li><a href="#">Туры</a></li>
-                  <li><a href="#">Акции</a></li>
-                  <li><a href="#">Контакты</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">Страны</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">Отели</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">Туры</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">Акции</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
                 </ul>
               </nav>
             </div>
@@ -103,28 +108,28 @@
                 loading="lazy"
                 class="resorts__card-img"
                 src="./img/resorts/resort-01.jpg"
-                alt="resorts-1" />
+                alt="Картинка: Пляжные домики у бассейна" />
             </a>
             <a href="#" class="resorts__card">
               <img
                 loading="lazy"
                 class="resorts__card-img"
                 src="./img/resorts/resort-02.jpg"
-                alt="resorts-2" />
+                alt="Картинка: Горнолыжный курорт" />
             </a>
             <a href="#" class="resorts__card">
               <img
                 loading="lazy"
                 class="resorts__card-img"
                 src="./img/resorts/resort-03.jpg"
-                alt="resorts-3" />
+                alt="Картинка: Покрытый зеленью остров в океане" />
             </a>
             <a href="#" class="resorts__card">
               <img
                 loading="lazy"
                 class="resorts__card-img"
                 src="./img/resorts/resort-04.jpg"
-                alt="resorts-4" />
+                alt="Картинка: Вид с балкона гостиницы на побережье" />
             </a>
           </div>
         </div>
@@ -192,27 +197,35 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__form">
-          <img loading="lazy" src="./img/favicon.svg" alt="logo" />
-          <ul class="footer__col1">
-            <li class="footer__text"><a href="#">Страны</a></li>
-            <li class="footer__text"><a href="#">Отели</a></li>
-            <li class="footer__text"><a href="#">Туры</a></li>
-            <li class="footer__text"><a href="#">Акции</a></li>
-            <li class="footer__text"><a href="#">Контакты</a></li>
+          <img class="logo" loading="lazy" src="./img/favicon.svg" alt="logo" />
+          <ul class="footer__col">
+            <li class="footer__text"><a href="#" class="footer__link">Страны</a></li>
+            <li class="footer__text"><a href="#" class="footer__link">Отели</a></li>
+            <li class="footer__text"><a href="#" class="footer__link">Туры</a></li>
+            <li class="footer__text"><a href="#" class="footer__link">Акции</a></li>
+            <li class="footer__text"><a href="#" class="footer__link">Контакты</a></li>
           </ul>
-          <ul class="footer__col2">
-            <li class="footer__text"><a href="#">Бронирование</a></li>
-            <li class="footer__text"><a href="#">Сервисные услуги</a></li>
-            <li class="footer__text"><a href="#">Направления</a></li>
-            <li class="footer__text"><a href="#">Частые вопросы</a></li>
-            <li class="footer__text"><a href="#">Программа лояльности</a></li>
+          <ul class="footer__col">
+            <li class="footer__text"><a href="#" class="footer__link">Бронирование</a></li>
+            <li class="footer__text"><a href="#" class="footer__link">Сервисные услуги</a></li>
+            <li class="footer__text"><a href="#" class="footer__link">Направления</a></li>
+            <li class="footer__text"><a href="#" class="footer__link">Частые вопросы</a></li>
+            <li class="footer__text"><a href="#" class="footer__link">Программа лояльности</a></li>
           </ul>
-          <ul class="footer__col3">
-            <li class="footer__text"><a href="#">Адрес: г.Москва, ул.Туристическая, д.1</a></li>
-            <li class="footer__text"><a href="tel:+79998887766">Телефон: +7-(999)-888-77-66</a></li>
-            <li class="footer__text"><a href="#">Время работы: 10:00 - 20:00</a></li>
+          <ul class="footer__col">
             <li class="footer__text">
-              <a href="mailto:Turism-Landing@yandex.ru">E-mail: Turism-Landing@yandex.ru</a>
+              <a href="#" class="footer__link">Адрес: г.Москва, ул.Туристическая, д.1</a>
+            </li>
+            <li class="footer__text">
+              <a href="tel:+79998887766" class="footer__link">Телефон: +7-(999)-888-77-66</a>
+            </li>
+            <li class="footer__text">
+              <a href="#" class="footer__link">Время работы: 10:00 - 20:00</a>
+            </li>
+            <li class="footer__text">
+              <a href="mailto:Turism-Landing@yandex.ru" class="footer__link"
+                >E-mail: Turism-Landing@yandex.ru</a
+              >
             </li>
             <div class="footer__social">
               <a href="#"><img loading="lazy" src="./img/social/youtube.svg" alt="youtube" /></a>
@@ -235,7 +248,10 @@
       </div>
     </div>
 
+    <div class="bubbles"></div>
+
     <script src="./main.js"></script>
     <script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
+    <script src="./scripts//bubbles.js"></script>
   </body>
 </html>

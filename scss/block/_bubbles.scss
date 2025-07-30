@@ -1,0 +1,41 @@
+.bubbles {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 1;
+}
+
+.bubble {
+  position: absolute;
+  bottom: 0;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba($marble, 0.7),
+    rgba($accent, 0.4),
+    rgba($white, 0.3)
+  );
+  border-radius: 50%;
+  opacity: 0.8;
+  box-shadow: 0 0 8px 2px rgba($marble, 0.7), inset -2px -2px 6px rgba($white, 0.3);
+  animation: riseDrift linear infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes riseDrift {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(15px, -50vh) scale(1.3);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(0, -100vh) scale(1.6);
+    opacity: 0;
+  }
+}

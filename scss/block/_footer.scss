@@ -1,9 +1,19 @@
 .footer {
   padding-top: 41px;
   padding-bottom: 41px;
-  background-color: $accent;
   font-size: 14px;
   letter-spacing: 0.05rem;
+
+  background: linear-gradient(
+    to top,
+    #cbb27d,
+    #d7c292,
+    #e6d6a8,
+    #f3eac2,
+    #f7f1d1,
+    #e1cda5,
+    #c9b377
+  );
 
   @include mediaTablet {
     padding-top: 20px;
@@ -16,7 +26,7 @@
     max-width: 155px;
   }
 
-  align-items: center;
+  align-items: start;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
@@ -32,6 +42,48 @@
 }
 
 .footer__social {
+  margin-top: 10px;
   display: flex;
   gap: 40px;
 }
+
+.footer__link {
+  font-weight: 600;
+}
+
+footer {
+  // position: relative;
+  background: linear-gradient(
+    to top,
+    #cbb27d,
+    #d7c292,
+    #e6d6a8,
+    #f3eac2,
+    #f7f1d1,
+    #e1cda5,
+    #c9b377
+  );
+  // padding: 40px;
+  // color: #6b5a2b;
+  // overflow: hidden;
+}
+
+// footer {
+//   background: linear-gradient(
+//     to top,
+//     #a6782a,
+//     #b28b31,
+//     #bd9e3a,
+//     #c9b041,
+//     #d4c54b,
+//     #dece55,
+//     #e9d95f,
+//     #f2e268,
+//     #f7e874,
+//     #fbef80,
+//     #fde487,
+//     #fdef90,
+//     #fdf497,
+//     #fefaa0
+//   );
+// }
